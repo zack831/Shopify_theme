@@ -29,6 +29,55 @@
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
+  .slider-mobile-gutter{
+    --desktop-margin-left-first-item:0px;
+
+  }
+  .slider-buttons-new{
+    display:flex;
+    justify-content:space-between;
+    padding:10px
+
+  }
+  #updar{
+    position:absolute;
+    top:16.5%;
+
+    z-index:1;
+    height:60%
+
+  }
+  #updar2{
+    position:absolute;
+    top:16.5%;
+
+    right:0px;
+    z-index:1;
+    height:60%
+  }
+  .slider-button .icon{
+    height:1rem
+  }
+
+
+
+
+
+  @media screen and (max-width: 1024px) {
+    #updar{
+      position:absolute;
+      background-color:transparent;
+      top:20%;
+      z-index:1;
+    }
+    #updar2{
+      position:absolute;
+      background-color:transparent;
+      top:20%;
+      z-index:1;
+    }
+  }
+
 
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
@@ -73,6 +122,36 @@
         </h2>
       {%- endif -%}
     </div>
+    <div>
+      {%- if show_mobile_slider or show_desktop_slider -%}
+        <div class="slider-buttons-new">
+          <button
+            type="button"
+            id="updar"
+            class="slider-button slider-button--prev"
+            name="previous"
+            aria-label="{{ 'general.slider.previous_slide' | t }}"
+            aria-controls="Slider-{{ section.id }}"
+          >
+            {% render 'icon-caret' %}
+          </button>
+
+          <button
+            type="button"
+
+            id="updar2"
+            class="slider-button slider-button--next"
+            name="next"
+            aria-label="{{ 'general.slider.next_slide' | t }}"
+            aria-controls="Slider-{{ section.id }}"
+          >
+            <div class="icon-new">
+              {% render 'icon-caret' %}
+            </div>
+          </button>
+        </div>
+      {%- endif -%}
+    </div>
 
     <slider-component class="slider-mobile-gutter{% if section.settings.full_width %} slider-component-full-width{% endif %}{% if show_mobile_slider == false %} page-width{% endif %}{% if show_desktop_slider == false and section.settings.full_width == false %} page-width-desktop{% endif %}{% if show_desktop_slider %} slider-component-desktop{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
       <ul
@@ -104,6 +183,7 @@
               quick_add: section.settings.quick_add
             %}
           </li>
+
           {%- assign skip_card_product_styles = true -%}
         {%- else -%}
           {%- for i in (1..section.settings.columns_desktop) -%}
