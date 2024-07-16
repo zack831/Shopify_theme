@@ -1,5 +1,6 @@
 .footer {
   border-top: 0.1rem solid rgba(var(--color-foreground), 0.08);
+  
 }
 
 .footer:not(.color-scheme-1) {
@@ -7,9 +8,12 @@
 }
 
 .footer__content-top {
-  padding-bottom: 5rem;
-  display: block;
+  
+  display: flex;
+  justify-content: space-between;
+  
 }
+
 
 @media screen and (max-width: 749px) {
   .footer .grid {
@@ -33,6 +37,12 @@
   }
 }
 
+@media screen and (max-width: 750px) {
+  .footer__content-top  {
+    display: block;
+  }
+}
+
 @media screen and (min-width: 750px) {
   .footer__content-top .grid {
     row-gap: 6rem;
@@ -41,7 +51,8 @@
 }
 
 .footer__content-bottom {
-  border-top: solid 0.1rem rgba(var(--color-foreground), 0.08);
+  border-top: solid 0.1rem gray;
+  opacity: 0.5;
   padding-top: 3rem;
 }
 
@@ -286,8 +297,11 @@
   }
 }
 
+
+
 .footer__content-bottom-wrapper--center {
-  justify-content: center;
+  
+  justify-content: space-between;
 }
 
 .footer__copyright {
@@ -337,7 +351,7 @@
 
 .footer-block__details-content .list-menu__item--link,
 .copyright__content a {
-  color: rgba(var(--color-foreground), 0.75);
+  color: rgb(255, 255, 255)
 }
 
 .footer-block__details-content .list-menu__item--active {
@@ -489,6 +503,7 @@
     transform: translateY(-1rem);
   }
 }
+
 
 /* check for flexbox gap in older Safari versions */
 @supports not (inset: 10px) {
