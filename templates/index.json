@@ -127,24 +127,114 @@
     "feature_with_menu_TP9hB8": {
       "type": "feature-with-menu",
       "settings": {
-        "collection": "kurta-kurtis",
-        "products_to_show": 7,
-        "columns_desktop": 4,
-        "full_width": true,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
+      }
+    },
+    "image_with_text_nYqpLL": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_j7LeN7": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "text_cWCpJX": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_PQ9UNE": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_j7LeN7",
+        "text_cWCpJX",
+        "button_PQ9UNE"
+      ],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
         "color_scheme": "",
-        "image_ratio": "portrait",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "testimonial_ycDhyK": {
+      "type": "testimonial",
+      "blocks": {
+        "column_prifcX": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/woman-poses-in-dark-room.jpg",
+            "title": "Column",
+            "text": "<p>this is a test<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_KM7erw": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/woman-poses-in-dark-room.jpg",
+            "title": "Column",
+            "text": "<p>This is a test<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_KKzCWQ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/woman-poses-in-dark-room.jpg",
+            "title": "Column",
+            "text": "<p>this is a test<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_prifcX",
+        "column_KM7erw",
+        "column_KKzCWQ"
+      ],
+      "settings": {
+        "title": "Testimonial",
+        "heading_size": "h1",
+        "image_width": "third",
+        "image_ratio": "circle",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "testimonial_section_background": "#ffffff",
+        "testimonial_background": "#fff",
+        "testimonial_title_color": "#000",
+        "testimonials_text_color": "#000",
+        "arrow_color": "#fff",
+        "arrow_bg_color": "#000"
       }
     }
   },
@@ -153,6 +243,8 @@
     "top_category_QnciUn",
     "new_arrival_VKD4Lp",
     "image_banner_clickable_rDmmYr",
-    "feature_with_menu_TP9hB8"
+    "feature_with_menu_TP9hB8",
+    "image_with_text_nYqpLL",
+    "testimonial_ycDhyK"
   ]
 }
