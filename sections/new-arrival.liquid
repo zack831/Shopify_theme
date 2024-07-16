@@ -34,6 +34,10 @@
     --desktop-margin-right-first-item: 0px;
 
   }
+
+  .grid .product-grid .contains-card .contains-card--product{
+    position:relative
+  }
   /* .slider-buttons-new{
     display:flex;
     justify-content:space-between;
@@ -55,6 +59,17 @@
     z-index:1;
     height:60%
   }*/
+  .feature__card__controls{
+    position:relative;
+
+    width:100%
+  }
+  .slider-button{
+    height:1rem;
+    background-color:white;
+    border-radius:50%
+  }
+
 
 
   .slider-button .icon{
@@ -64,6 +79,11 @@
     .slider--tablet:after {
       padding-left: 0px;
     }}
+    .feature__card__controls{
+    position:absolute;
+    bottom:50%;
+    width:100%
+  }
 
   @media screen and (max-width: 1024px) {
     #updar{
@@ -243,6 +263,7 @@
             {% endcomment %}
             <button
               type="button"
+              id="upar2"
               class="slider-button slider-button--next"
               name="next"
               aria-label="{{ 'general.slider.next_slide' | t }}"

@@ -9,6 +9,7 @@ slider-component.slider-component-full-width {
   --desktop-margin-left-first-item: 1.5rem;
 }
 
+
 @media screen and (max-width: 749px) {
   slider-component.page-width {
     padding: 0 1.5rem;
@@ -339,7 +340,7 @@ slider-component.slider-component-full-width {
 
 .slider-button {
   color: rgba(var(--color-foreground), 0.75);
-  background: transparent;
+  background: white;
   border: none;
   cursor: pointer;
   width: 44px;
@@ -347,6 +348,7 @@ slider-component.slider-component-full-width {
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity: 0.7;
 }
 
 .slider-button:not([disabled]):hover {
