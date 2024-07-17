@@ -27,6 +27,13 @@
             "swatch_shape": "circle"
           }
         },
+        "popup_7TDXW8": {
+          "type": "popup",
+          "settings": {
+            "text": "Size Chart",
+            "page": "size-chart"
+          }
+        },
         "quantity_selector": {
           "type": "quantity_selector",
           "settings": {
@@ -39,27 +46,31 @@
             "show_gift_card_recipient": true
           }
         },
+        "icon_with_text_prntxt": {
+          "type": "icon-with-text",
+          "settings": {
+            "layout": "horizontal",
+            "icon_1": "plane",
+            "heading_1": "Heading",
+            "icon_2": "return",
+            "heading_2": "Heading",
+            "icon_3": "truck",
+            "heading_3": "Heading"
+          }
+        },
         "description": {
           "type": "description",
           "settings": {
+            "heading": "Description",
+            "icon": "clipboard"
           }
         },
-        "collapsible-row-0": {
-          "type": "collapsible_tab",
+        "shipping_gkzMiy": {
+          "type": "shipping",
           "settings": {
-            "heading": "Materials",
-            "icon": "leather",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible_tab_GWaXRD": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Collapsible row",
-            "icon": "none",
-            "content": "",
-            "page": ""
+            "heading": "Shipping",
+            "page": "size-chart",
+            "icon": "plane"
           }
         }
       },
@@ -68,11 +79,12 @@
         "caption",
         "price",
         "variant_picker",
+        "popup_7TDXW8",
         "quantity_selector",
         "buy_buttons",
+        "icon_with_text_prntxt",
         "description",
-        "collapsible-row-0",
-        "collapsible_tab_GWaXRD"
+        "shipping_gkzMiy"
       ],
       "settings": {
         "enable_sticky_info": true,

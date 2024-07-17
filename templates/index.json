@@ -124,11 +124,6 @@
         "show_text_below": true
       }
     },
-    "feature_with_menu_TP9hB8": {
-      "type": "feature-with-menu",
-      "settings": {
-      }
-    },
     "image_with_text_nYqpLL": {
       "type": "image-with-text",
       "blocks": {
@@ -237,11 +232,18 @@
         "arrow_bg_color": "#000000"
       }
     },
-    "product_corsual_6Nj7mm": {
+    "product_corsual_ezhzt6": {
       "type": "product-corsual",
       "settings": {
         "title": "Featured collection",
         "collection": "kurta-sets"
+      }
+    },
+    "product_corsual_XegYgA": {
+      "type": "product-corsual",
+      "settings": {
+        "title": "New Arrival",
+        "collection": "new-arrival"
       }
     }
   },
@@ -250,9 +252,9 @@
     "top_category_QnciUn",
     "new_arrival_VKD4Lp",
     "image_banner_clickable_rDmmYr",
-    "feature_with_menu_TP9hB8",
     "image_with_text_nYqpLL",
     "testimonial_ycDhyK",
-    "product_corsual_6Nj7mm"
+    "product_corsual_ezhzt6",
+    "product_corsual_XegYgA"
   ]
 }
