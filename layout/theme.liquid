@@ -303,6 +303,46 @@
       }
     </script>
   </head>
+  <style>
+    @media (min-width: 1000px) {
+      .card__content {
+        position: absolute !important;
+        top: 0;
+        left: 0;
+        bottom: 15%;
+        right: 0;
+        align-items: flex-end;
+        z-index: 999;
+        opacity: 0;
+        display: flex;
+      }
+      li.grid__item.scroll-trigger.animate--slide-in:hover .card__content {
+        opacity: 1 !important;
+      }
+      li.grid__item.scroll-trigger.animate--slide-in:hover .card__media .media img {
+        opacity: 0.8;
+      }
+    }
+    @media (min-width: 1420px) {
+      .card__content {
+        position: absolute !important;
+        top: 0;
+        left: 0;
+        bottom: 10%;
+        right: 0;
+        align-items: flex-end;
+        z-index: 999;
+        opacity: 0;
+        display: flex;
+      }
+      li.grid__item.scroll-trigger.animate--slide-in:hover .card__content {
+        opacity: 1 !important;
+      }
+      li.grid__item.scroll-trigger.animate--slide-in:hover .card__media .media img {
+        opacity: 0.8;
+      }
+    }
+  </style>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
